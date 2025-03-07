@@ -1,0 +1,7 @@
+@utf-8;
+
+li {
+  list-style: none;
+  font-weight: lighter;
+  line-height: 40px;
+}
