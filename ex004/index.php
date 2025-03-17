@@ -28,6 +28,30 @@
             <li>\u{} = Codepoint Unido</li>
         </ul>
     </h2>
+    <h2>Sintaxe Heredoc</h2>
+    <?php
+    $curso = "PHP";
+    $ano = date('Y');
+    $canal = "Curso em Video";
+    echo <<< FRASE
+        Estou estudando $curso
+            no ano de $ano
+        no canal do youtube: $canal
+
+        FRASE;
+    ?>
+    <h2> Nowdoc </h2>
+    <?php 
+        $curso = "PHP";
+        $ano = date('Y');
+        $canal = "Curso em Video";
+        echo <<< 'FRASE'
+            Estou estudando $curso
+                no ano de $ano
+            no canal do youtube: $canal
+    
+            FRASE;
+    ?>
 </body>
 
 </html>
